@@ -1,0 +1,14 @@
+<html>
+    <head>
+    	<title>My Kitties</title>
+    </head>
+    <ul>
+	  <% tokens.forEach(function(token){ %>
+	  	<li>
+            <a href='https://www.cryptokitties.co/kitty/<%= token %>'>
+                <%= token %>
+            </a>
+        </li>
+	  <% }); %>
+	</ul>
+</html>
