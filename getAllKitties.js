@@ -118,7 +118,7 @@ function updateKittiesWithEvents(events, lastBlock, isSiring = false) {
 			let sireId = event.sireId;
 			let genes = event.genes;
 
-			if(kittyId != "undefined" && kittyId > 0 && genes != "undefined") {
+			if(kittyId != undefined && kittyId > 0 && genes != undefined) {
 				let generation = 0;
 
 				if(matronId != 0 && sireId != 0) {
@@ -166,7 +166,7 @@ function updateKittiesWithEvents(events, lastBlock, isSiring = false) {
 					// Transfer
 					if(e.event == "Transfer") {
 						let toAddress = event.to;
-						if(toAddress != "undefined") {
+						if(toAddress != undefined) {
 							let kittyOwners = kittyInfos.owners;
 							if(notEmptyArray(kittyOwners)) {
 								kittyOwners.push(toAddress);
